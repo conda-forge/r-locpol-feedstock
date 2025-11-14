@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/locpol_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/locpol/locpol_{{ version }}.tar.gz
-  sha256: b37f62c69995d8b856bd3eb418b9605e0cbddc9f6ccc9d4960dcb659484f37ae
+  sha256: a904922419446a9d5b7fc4040de98ecd05655f67b1a9e6925f1d503ba6db4303
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
